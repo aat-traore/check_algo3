@@ -1,0 +1,29 @@
+Fonction  dot_product(v1,v2):Interger 
+VAR
+i,ps:INTEGER;
+v1,v2:Array_OF INTEGER[3];
+BEGIN
+    WHILE (i<v1.length && i<v2.length) DO
+    ps=v1[i]*v2[i]
+    i++
+    END_WHILE
+    RETURN ps;
+END
+ALGORITHM array_vecteur
+VAR
+  tab, tab1 : ARRAY_OF type[3];
+  somme,i,n : INTEGER; 
+Read(n)
+write("enter a first array")
+Read(v1([i]))
+FOR i FROM 0 TO v1 STEP step DO
+write("enter a second array")
+Read(v2([i]))
+FOR i FROM 0 TO v2 STEP step Do
+somme+= v1[i]*v2[i]
+IF (somme>0) THEN
+   ps: dot_product(v1,v2)
+ELSE
+    write("les deux vecteurs ne sont pas orthogonaux")
+END_IF
+BEGIN

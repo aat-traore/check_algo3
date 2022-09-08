@@ -1,0 +1,27 @@
+PROCEDURE dot_product(VAR ps,v1,v2:INTEGER)
+    
+BEGIN
+Read(v1[i],v2[i])
+FOR i FROM 0 TO v2 STEP step  DO
+    ps=v1[i]*v2[i]
+    i++
+END_WHILE
+END
+ALGORITHM array_vecteur
+VAR
+  tab, tab1 : ARRAY_OF type[3];
+  somme,i,n : INTEGER; 
+Read(n)
+write("enter a first array")
+Read(v1([i]))
+FOR i FROM 0 TO v1 STEP step DO
+write("enter a second array")
+Read(v2([i]))
+FOR i FROM 0 TO v2 STEP step Do
+somme+= v1[i]*v2[i]
+IF (somme>0) THEN
+   dot_product(ps)
+ELSE
+    write("les deux vecteurs ne sont pas orthogonaux")
+END_IF
+BEGIN
